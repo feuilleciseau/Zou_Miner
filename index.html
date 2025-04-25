@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zou Miner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid my-2">
+        <div class="row mb-2">
+            <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="d-flex flex-column">
+                    <h5>Wallet: <span id="zc-amount">0.15</span> Zc</h5>
+                    <h5>Mining rate: <span id="current-mining-rate">0.000</span> Zc/s</h5>
+                </div>
+                <div class="d-flex flex-column text-end">
+                    <h5>Current location: <span id="location-name">Room</span></h5>
+                    <p>Capacity: <span id="used-capacity">0</span>/<span id="total-capacity">5</span></p>
+                    <div class="progress" style="height: 15px;">
+                        <div id="capacity-bar" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Owned miners -->
+        <div class="row mb-2">
+            <div class="col-12">
+                <h5>Your miners</h5>
+                <div class="row" id="owned-miners-container">
+                    <!-- Owned miners will be inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Available miners -->
+        <div class="row mb-2">
+            <div class="col-12">
+                <h5>Available miners</h5>
+                <div class="row" id="miners-container">
+                    <!-- Available miners will be inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Available locations -->
+        <div class="row mb-2">
+            <div class="col-12">
+                <h5>Available locations</h5>
+                <div class="row" id="locations-container">
+                    <!-- Available locations will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

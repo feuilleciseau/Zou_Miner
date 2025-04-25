@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 16px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.card {
+    margin-bottom: 5px;
+}
+
+.card-body {
+    padding: 8px;
+}
+
+.card-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.progress {
+    height: 10px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@media (max-width: 576px) {
+    h5 {
+        font-size: 14px;
+    }
+    .card-title {
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+}
